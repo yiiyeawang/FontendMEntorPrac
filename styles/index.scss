@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//guid-line
+// 布局
+
+// 设计稿的宽度如下：
+
+// 移动端：375px
+// 桌面端：1440px
+// 💡 这些只是设计尺寸。请确保内容具有响应性，并通过测试从 320px 到大型屏幕的全范围尺寸，满足 WCAG（网页内容无障碍指南）的要求。
+// 颜色
+
+// 主要颜色
+// 绿色 200（较浅）：hsl(148, 38%, 91%)
+// 绿色 600（中等）：hsl(169, 82%, 27%)
+// 红色：hsl(0, 66%, 54%)
+// 中性色
+// 白色：hsl(0, 0%, 100%)
+// 灰色 500（中等）：hsl(186, 15%, 59%)
+// 灰色 900（较深）：hsl(187, 24%, 22%)
+// 排版
+
+// 正文
+// 字体大小（标签）：16px
+// 字体
+// 字体家族：Karla
+// 字重：400, 700
+@font-face {
+    font-family: 'Karla';
+    src: url('../assets/fonts/Karla-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* 支持从 100 到 900 的粗细 */
+    font-style: normal;
+    
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url('../assets/fonts/Karla-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* 支持从 100 到 900 的粗细 */
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url('../assets/fonts/static/Karla-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Karla';
+    src: url('../assets/fonts/static/Karla-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Karla';
+}
+
+label[for]:not([for="General Enquiry"]):not([for="Support Request"])::after {
+    content: " *";
+    color: hsl(169, 82%, 27%); /* Tailwind 的红色 */
+  }
+
+/* 在你的全局 CSS 文件中 */
+.radio-item.selected {
+    @apply bg-blue-100; /* 選擇時的背景顏色 */
+  }
+  
+.radio-item .radio-prefix.selected {
+    background-image: url('../assets/images/icon-radio-selected.svg');
+  }
+  
+
+

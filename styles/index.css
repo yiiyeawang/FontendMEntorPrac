@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* 支持从 100 到 900 的粗细 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/Karla-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* 支持从 100 到 900 的粗细 */
+  font-style: italic;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/static/Karla-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("../assets/fonts/static/Karla-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Karla";
+}
+
+label[for]:not([for="General Enquiry"]):not([for="Support Request"])::after {
+  content: " *";
+  color: hsl(169, 82%, 27%); /* Tailwind 的红色 */
+}
+
+/* 在你的全局 CSS 文件中 */
+.radio-item.selected {
+  @apply bg-blue-100; /* 選擇時的背景顏色 */
+}
+
+.radio-item .radio-prefix.selected {
+  background-image: url("../assets/images/icon-radio-selected.svg");
+}/*# sourceMappingURL=index.css.map */
