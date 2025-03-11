@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@layer base {
+  :root {
+    --color-Blue:hsl(246, 80%, 60%);
+    --color-LightRred: hsl(15, 100%, 70%);
+    --color-Softblue: hsl(195, 74%, 62%);
+    --color-LightRedStudy: hsl(348, 100%, 68%);
+    --color-LimeGreen: hsl(145, 58%, 55%);
+    --color-Violet: hsl(264, 64%, 52%);
+    --color-SoftOrange: hsl(43, 84%, 65%);
+    --color-VeryDarkBlue: hsl(226, 43%, 10%);
+    --color-DarkBlue: hsl(235, 46%, 20%);
+    --color-DesaturatedBlue: hsl(235, 45%, 61%);
+    --color-PaleBlue: hsl(236, 100%, 87%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=main.css.map */
