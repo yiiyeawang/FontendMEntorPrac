@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](02.time-tracking-dashboard-main/previweDesktop.png)
+![](./02.time-tracking-dashboard-main/previweDesktop.png)
 
 ### Links
 
