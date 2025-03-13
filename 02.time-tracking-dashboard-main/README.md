@@ -36,6 +36,10 @@ Users should be able to:
 
 ## My process
 
+- HTML 建構時間花費約莫 0.5hrs
+- TailwindCss 建構學習時間花費約莫 2.5hrs
+- Vue.js 建構學習時間花費約莫 3hrs
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -47,15 +51,15 @@ Users should be able to:
 
 ### What I learned
 
-學習 tailwind 自定義樣式
-學習 tailwind 自定義圖片的使用
-學習 tailwind 偽元素::before ::after 的使用
-學習 tailwind 自定義圖片與偽元素結合應用
-學習 在 Vue.js 框架的使用下，與 taiwind 的配合。
-學習 Vue.js 框架如何載入外部 API 資訊與彙整資訊
-學習 Vue.js 如何動態變更資訊
-學習 Vue.js class 設定可分為兩種/物件式與陣列式
-學習 Vue.js click 設定方法
+- 學習 tailwind 自定義樣式
+- 學習 tailwind 自定義圖片的使用
+- 學習 tailwind 偽元素::before ::after 的使用
+- 學習 tailwind 自定義圖片與偽元素結合應用
+- 學習 在 Vue.js 框架的使用下，與 taiwind 的配合。
+- 學習 Vue.js 框架如何載入外部 API 資訊與彙整資訊
+- 學習 Vue.js 如何動態變更資訊
+- 學習 Vue.js class 設定可分為兩種/物件式與陣列式
+- 學習 Vue.js click 設定方法
 
 ### Continued development
 
