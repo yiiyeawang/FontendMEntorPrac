@@ -5,8 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.tailwindcss.com/3.3.3"></script>
   
   <title>Frontend Mentor | Expenses chart component</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+                SoftRed: 'hsl(10, 79%, 65%)', 
+                Cyan: 'hsl(186, 34%, 60%)',//青綠
+            },
+            neutral: {
+                DarkBrown: 'hsl(25, 47%, 15%)',
+                MediumBrown: 'hsl(28, 10%, 53%)',//乃土咖
+                Cream: 'hsl(27, 66%, 92%)',
+                VeryPaleOrange: 'hsl(33, 100%, 98%)',
+            },
+          },
+          screens: {
+            'max-375':{'max':'375px'},
+          },
+          backgroundImage: {
+            'logo': "url('./images/logo.svg')",
+          }
+        },
+      },
+    };
+  </script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,30 +44,41 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="w-full h-screen">
+    <div id="app" class="flex flex-row justify-center content-center bg-neutral-Cream w-full h-full">
+        <div class="wrap self-center">
+            <div class="title bg-primary-SoftRed flex flex-wrap content-center justify-between rounded-lg mb-4 p-6">
+                <div class="balancetextBox">
+                    <div class="text text-white">My balance</div>
+                    <div class="Qua text-white text-2xl font-semibold">$921.48</div>
+                </div>
+                <div class="logo bg-logo bg-no-repeat bg-center bg-contain w-10"></div>
+            </div>
+            <div class="chartBox bg-white rounded-lg p-4 mb-4">
+                <div class="subtitle text-neutral-DarkBrown text-3xl font-bold mb-8">Spending - Last 7 days</div>
+                <canvas id="ctx" class="" style="height: 300px;"></canvas><!--注意tip所佔用的空間-->
+                <div class="line border-b border-neutral-MediumBrown my-4 p-2 h-3"></div>
+                <div class="total flex flex-wrap justify-between">
+                    <label class=" basis-full text-neutral-MediumBrown">Total this month</label>
+                    <div class="left ">
+                        <div class="totalQua text-4xl text-neutral-DarkBrown font-bold">$478.33</div>
+                    </div>
+                    <div class="right text-right">
+                        <div class="percent text-neutral-DarkBrown font-semibold">+2.4%</div>
+                        <div class="timecamp text-neutral-MediumBrown">from last month</div>
+                    </div>
+                </div>
+            </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#">Angela Wang</a>.
+              </div>
+        </div>
+    </div>
 
-  My balance
-  $921.48
+ 
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Angela Wang</a>.
-  </div>
+  <script src="main.js" ></script>
+   
 </body>
 </html>
